@@ -1,0 +1,25 @@
+# Node dependencies
+**/node_modules/
+**/dist/
+.npm
+package-lock.json
+
+# Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Local database & temp uploads
+*.log
+extracted_pdf_texts.txt
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
