@@ -77,13 +77,13 @@ export default function HistoryPage() {
             Archival log of all computer vision inspections, discrepancy records, and inventory adjustments.
           </p>
         </div>
-        <a
-          href={api.getReportsExportUrl()}
+        <button
+          onClick={() => api.exportClientCSV()}
           className="flex items-center gap-2 px-4 py-2.5 bg-white border border-slate-300 text-slate-700 font-semibold text-sm rounded-lg hover:bg-slate-50 shadow-sm transition self-start sm:self-auto"
         >
           <FileSpreadsheet className="w-4 h-4 text-emerald-600" />
           <span>Export Full History (CSV)</span>
-        </a>
+        </button>
       </div>
 
       {/* Search & Filter Bar */}

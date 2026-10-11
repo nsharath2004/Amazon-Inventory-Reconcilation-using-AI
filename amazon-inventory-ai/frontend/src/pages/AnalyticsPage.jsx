@@ -80,13 +80,13 @@ export default function AnalyticsPage() {
             Audit metrics, discrepancy trends, and academic research performance benchmarks.
           </p>
         </div>
-        <a
-          href={api.getReportsExportUrl()}
+        <button
+          onClick={() => api.exportClientCSV()}
           className="flex items-center gap-2 px-4 py-2.5 bg-emerald-600 text-white font-semibold text-sm rounded-lg hover:bg-emerald-700 shadow-sm transition self-start sm:self-auto"
         >
           <FileSpreadsheet className="w-4 h-4" />
           <span>Export Reconciliation Report (CSV)</span>
-        </a>
+        </button>
       </div>
 
       {/* KPI Cards */}

@@ -23,3 +23,7 @@ extracted_pdf_texts.txt
 Thumbs.db
 .vscode/
 .idea/
+
+# Office temporary lock files
+~$*
+*.tmp

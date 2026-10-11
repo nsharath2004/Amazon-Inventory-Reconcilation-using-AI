@@ -116,13 +116,13 @@ export default function DashboardPage({ setTab, onQuickAnalyze }) {
             <ScanSearch className="w-4 h-4" />
             <span>New Bin Scan</span>
           </button>
-          <a
-            href={api.getReportsExportUrl()}
+          <button
+            onClick={() => api.exportClientCSV()}
             className="flex items-center gap-2 px-4 py-2.5 bg-white border border-slate-300 text-slate-700 font-medium text-sm rounded-lg hover:bg-slate-50 shadow-sm transition"
           >
             <FileSpreadsheet className="w-4 h-4 text-emerald-600" />
             <span>Export CSV</span>
-          </a>
+          </button>
         </div>
       </div>
 
